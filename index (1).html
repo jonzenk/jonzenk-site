@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<title>JONZENK — Booking &amp; Press</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Squada+One&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		/* language toggle */
+		[data-lang]{display:none;}
+		body.lang-fr [data-lang="fr"]{display:inline;}
+		body.lang-fr div[data-lang="fr"], body.lang-fr p[data-lang="fr"]{display:block;}
+		body.lang-en [data-lang="en"]{display:inline;}
+		body.lang-en div[data-lang="en"], body.lang-en p[data-lang="en"]{display:block;}
+
+		#lang-switch{position:fixed; top:1.25em; right:1.25em; z-index:10001; display:flex; border:1px solid rgba(255,255,255,0.5); border-radius:100px; overflow:hidden; backdrop-filter:blur(6px);}
+		#lang-switch button{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.06em; background:rgba(20,18,16,0.35); border:none; color:#fff; padding:0.5em 0.9em; cursor:pointer;}
+		#lang-switch button.active{color:#141210; background:#e8a33d; font-weight:600;}
+
+		.video-embed{position:relative; width:100%; aspect-ratio:16/9; background:#000;}
+		.video-embed iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+
+		.rider-list{list-style:none; padding:0; margin:0 0 1.5em 0;}
+		.rider-list li{padding:0.4em 0; border-bottom:1px solid rgba(20,18,16,0.1); font-size:0.95em;}
+		.rider-heading{font-family:'IBM Plex Mono',monospace; font-size:0.75em; letter-spacing:0.12em; text-transform:uppercase; color:#c8811f; margin:1.5em 0 0.6em;}
+		.rider-heading:first-child{margin-top:0;}
+	</style>
+</head>
+<body class="is-preload lang-fr">
+
+	<div id="lang-switch">
+		<button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+		<button id="btn-en" onclick="setLang('en')">EN</button>
+	</div>
+
+	<!-- Page Wrapper -->
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">JONZENK</a></h1>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="#one"><span data-lang="fr">Le Live</span><span data-lang="en">Live Show</span></a></li>
+							<li><a href="#two"><span data-lang="fr">Qui est JONZENK</span><span data-lang="en">Who Is JONZENK</span></a></li>
+							<li><a href="#three">Booking</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="inner">
+						<h2>JONZENK</h2>
+						<p><span data-lang="fr">Rappeur, chanteur et producteur — un live énergique et polyvalent</span><span data-lang="en">Rapper, singer and producer — an energetic and versatile live show</span></p>
+					</div>
+				</section>
+
+			<!-- Wrapper -->
+				<section id="wrapper">
+
+					<!-- One: Live Show -->
+						<section id="one" class="wrapper spotlight style1">
+							<div class="inner">
+								<div class="video-embed">
+									<iframe src="https://www.youtube.com/embed/aII7Sd06hAQ" title="JONZENK live set" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="content">
+									<h2 class="major"><span data-lang="fr">Le Live</span><span data-lang="en">The Live Show</span></h2>
+									<p data-lang="fr">Le live de JONZENK est ancré dans la narration. Il alterne ruptures de rythme franches et moments de piano épurés, entre beats rock/rap saturés, sections orchestrales cinématographiques et ballades calmes et intimes. Le rap et le chant reposent sur une production riche, avec des improvisations au clavier dans les passages les plus groovy.</p>
+									<p data-lang="en">JONZENK's live set is rooted in storytelling. It moves through sharp beat switches and stripped piano moments, shifting from loud, distorted rock/rap beats and cinematic orchestral sections to quiet, intimate ballads. Rap and singing sit over layered production, with live improvisation on keys cutting through groovier sections.</p>
+								</div>
+							</div>
+						</section>
+
+					<!-- Two: Highlights reel + Performance highlights -->
+						<section id="two" class="wrapper alt spotlight style2">
+							<div class="inner">
+								<div class="video-embed">
+									<iframe src="https://www.youtube.com/embed/idbsRD3i8wk" title="JONZENK highlights" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="content">
+									<h2 class="major"><span data-lang="fr">Temps forts</span><span data-lang="en">Performance Highlights</span></h2>
+									<ul class="rider-list">
+										<li>Festimel 2025 &amp; 2026 – Reims, France (Festival)</li>
+										<li>La Theory du KHAOS – Montréal, Canada (Festival)</li>
+										<li>KHAOS COLORS 2025 – Montréal, Canada (Performance)</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+					<!-- Three: Who is JONZENK -->
+						<section id="three" class="wrapper spotlight style3">
+							<div class="inner">
+								<a href="assets/JONZENK_Press_Kit.pdf" target="_blank" class="image"><img src="images/pic02.png" alt="WHERE DO WE GO FROM HERE — album art" /></a>
+								<div class="content">
+									<h2 class="major"><span data-lang="fr">Qui est JONZENK ?</span><span data-lang="en">Who is JONZENK?</span></h2>
+									<p data-lang="fr">JONZENK est un rappeur, chanteur et producteur franco-américain dont la musique traverse le hip-hop, le funk, le rock et l'électro pour raconter une seule histoire personnelle. Influencé par le jazz et pianiste autodidacte, il sort en 2025 son premier album WHERE DO WE GO FROM HERE. Son clip a reçu le prix du meilleur clip micro-budget au Toronto International Music Video Festival.</p>
+									<p data-lang="en">JONZENK is a French-American rapper, singer, and producer whose music moves through hip-hop, funk, rock, and electronic to tell one continuous, personal story. Rooted in jazz and self-taught on piano, he released his debut album WHERE DO WE GO FROM HERE in 2025. The accompanying music video won Best Micro-Budget Music Video at the Toronto International Music Video Festival.</p>
+									<p data-lang="fr" style="font-size:0.85em; opacity:0.7;">Produit et mixé en collaboration avec <a href="https://www.instagram.com/menflou" target="_blank">@Menflou</a>.</p>
+									<p data-lang="en" style="font-size:0.85em; opacity:0.7;">Produced and mixed in collaboration with <a href="https://www.instagram.com/menflou" target="_blank">@Menflou</a>.</p>
+									<a href="assets/JONZENK_Press_Kit.pdf" target="_blank" class="special"><span data-lang="fr">Dossier de presse complet (PDF)</span><span data-lang="en">Full press kit (PDF)</span></a>
+								</div>
+							</div>
+						</section>
+
+					<!-- Four: Booking Information -->
+						<section id="booking" class="wrapper alt style1">
+							<div class="inner">
+								<h2 class="major">Booking</h2>
+
+								<span class="rider-heading"><span data-lang="fr">Performance : 45 min</span><span data-lang="en">Performance: 45 min</span></span>
+								<ul class="rider-list">
+									<li data-lang="fr">Solo (Beat, claviers live)</li><li data-lang="en">Solo (Beat, Live Keys)</li>
+									<li data-lang="fr">Duo : (+Basse)</li><li data-lang="en">Duo: (+Bass)</li>
+									<li data-lang="fr">Groupe : (+Batterie, Guitare)</li><li data-lang="en">Band: (+Drums, Guitar)</li>
+								</ul>
+
+								<span class="rider-heading"><span data-lang="fr">Configuration technique</span><span data-lang="en">Technical Requirements</span></span>
+								<ul class="rider-list">
+									<li data-lang="fr">Système PA</li><li data-lang="en">PA system</li>
+									<li data-lang="fr">Entrée pour ordinateur (backing tracks)</li><li data-lang="en">Input for laptop (backing tracks)</li>
+									<li data-lang="fr">Clavier (si disponible)</li><li data-lang="en">Keyboard (if available)</li>
+									<li data-lang="fr">Micros voix</li><li data-lang="en">Vocal microphones</li>
+									<li data-lang="fr">Amplis guitare et basse (pour duo/groupe)</li><li data-lang="en">Guitar and bass amps (for duo/Band)</li>
+									<li data-lang="fr">Retour de scène</li><li data-lang="en">Monitor speaker</li>
+									<li data-lang="fr">Batterie (pour groupe)</li><li data-lang="en">Drums (for Band)</li>
+									<li data-lang="fr">Micros batterie (pour groupe)</li><li data-lang="en">Drum microphones (for Band)</li>
+								</ul>
+								<p data-lang="fr" style="font-size:0.85em; opacity:0.7;">Configuration flexible selon la taille de la salle.</p>
+								<p data-lang="en" style="font-size:0.85em; opacity:0.7;">Flexible setup depending on venue size.</p>
+
+								<p data-lang="fr" style="margin-top:1.5em;">Concerts organisés et gérés par JONZENK, en collaboration avec <a href="https://www.instagram.com/menflou" target="_blank">@Menflou</a>.</p>
+								<p data-lang="en" style="margin-top:1.5em;">Performances organized and managed by JONZENK, in collaboration with <a href="https://www.instagram.com/menflou" target="_blank">@Menflou</a>.</p>
+							</div>
+						</section>
+
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major"><span data-lang="fr">Parlons de la programmation</span><span data-lang="en">Let's talk about the lineup</span></h2>
+						<p><a href="mailto:jonzenk2001@gmail.com" style="font-size:1.3em;">jonzenk2001@gmail.com</a></p>
+						<ul class="contact">
+							<li class="icon brands fa-instagram"><a href="https://www.instagram.com/jonzenk/" target="_blank">instagram.com/jonzenk</a></li>
+							<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@jonzenk2001" target="_blank">youtube.com/@jonzenk2001</a></li>
+							<li class="icon solid fa-link"><a href="https://linktr.ee/jonzenk" target="_blank">linktr.ee/jonzenk</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; JONZENK.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			function setLang(l){
+				document.body.classList.remove('lang-fr','lang-en');
+				document.body.classList.add('lang-'+l);
+				document.getElementById('btn-fr').classList.toggle('active', l==='fr');
+				document.getElementById('btn-en').classList.toggle('active', l==='en');
+				document.documentElement.lang = l;
+			}
+		</script>
+</body>
+</html>
