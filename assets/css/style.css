@@ -5,7 +5,7 @@
 	--title: 'Archivo', sans-serif;
 	--subtitle: 'Squada One', sans-serif;
 	--body: 'Alatsi', sans-serif;
-	--max-w: 820px;
+	--max-w: clamp(680px, 58vw, 960px);
 	--video-w: 80vw;
 	--pad-x: clamp(1.5rem, 5vw, 3rem);
 	--pad-y: clamp(5rem, 11vw, 9rem);
@@ -24,6 +24,10 @@ img{display:block; max-width:100%;}
 a{color:inherit;}
 
 .wrap{max-width:var(--max-w); margin:0 auto; padding:0 var(--pad-x);}
+
+@media (min-width:760px){
+	.wrap.wrap-wide{max-width:var(--video-w); padding:0;}
+}
 
 section{padding:var(--pad-y) 0;}
 section.gold{background:var(--gold); color:var(--white);}
@@ -44,10 +48,15 @@ section.white{background:var(--white); color:var(--black);}
 
 /* hero */
 .hero{
-	min-height:100vh;
-	display:flex; flex-direction:column; align-items:center; justify-content:center;
-	text-align:center; gap:clamp(1.5rem, 4vw, 3rem);
-	padding:6rem var(--pad-x);
+	min-height:160vh;
+	display:flex; flex-direction:column; align-items:center;
+	text-align:center;
+}
+.hero-title{
+	flex:0 0 100vh;
+	width:100%;
+	display:flex; align-items:center; justify-content:center;
+	padding:0 var(--pad-x);
 }
 .hero h1{
 	font-family:var(--title);
@@ -64,10 +73,16 @@ section.white{background:var(--white); color:var(--black);}
 	font-size:clamp(1.15rem, 3vw, 2rem);
 	color:var(--black);
 	line-height:1.5;
+	max-width:700px;
+	margin-top:auto;
+	padding:0 var(--pad-x) var(--pad-y);
 }
 
 /* genres */
 .genres{text-align:center; font-weight:700; font-size:clamp(1.15rem, 2.6vw, 1.6rem); line-height:1.5;}
+
+/* scroll-linked reveal (see assets/js/site.js) */
+[data-reveal]{transition:opacity .1s linear, transform .1s linear;}
 
 /* section headings */
 .kicker{
@@ -87,8 +102,15 @@ section.gold .kicker, section.gold h2.kicker{color:var(--white);}
 	text-align:center;
 	margin:3rem 0 1.5rem;
 }
-.lede{max-width:var(--max-w); font-size:clamp(1.15rem, 2vw, 1.5rem); line-height:1.7;}
+.lede{
+	max-width:var(--max-w); margin:0 auto; padding:0 var(--pad-x);
+	font-size:clamp(1.15rem, 2vw, 1.5rem); line-height:1.7;
+}
 .lede + .lede{margin-top:1.4rem;}
+
+@media (min-width:760px){
+	.lede{max-width:var(--video-w); padding:0;}
+}
 
 /* dot-leader rows */
 .dotline{
@@ -164,6 +186,7 @@ footer.white{padding:4rem 0;}
 .footer-icon-square{
 	width:clamp(56px, 6vw, 72px); height:clamp(56px, 6vw, 72px);
 	background:var(--gold); color:var(--white);
+	border:2px solid var(--black);
 	display:flex; align-items:center; justify-content:center;
 	transition:transform .15s ease, background .15s ease;
 }
