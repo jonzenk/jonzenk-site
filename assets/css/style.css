@@ -193,6 +193,13 @@ footer.white{padding:4rem 0;}
 .footer-icons a:hover .footer-icon-square{background:var(--black); transform:translateY(-3px);}
 .footer-icon-square svg{width:40%; height:40%; fill:currentColor;}
 
+.footer-press{
+	display:block; text-align:center; margin-top:2.5rem;
+	font-size:clamp(0.8rem, 1.1vw, 0.95rem); text-decoration:underline;
+	opacity:0.8;
+}
+.footer-press:hover{opacity:1;}
+
 /* centering helpers */
 .center{text-align:center;}
 .section-inner{display:flex; flex-direction:column; align-items:center;}
